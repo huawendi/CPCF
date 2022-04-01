@@ -3,7 +3,7 @@ CGCF: A Flexible Chunking and Generous Random Walk Breadth-first Two-way Search 
 
 Overview
 --------
-CGCF is a type of approximate set-membership query data structure based on cuckoo filter. CGCF requires smaller space and provides better operational performance in most cases, compared to other cuckoo filter variant.
+CGCF is a type of approximate set-membership query data structure based on cuckoo filter. CGCF requires smaller space and provides better operational performance in most cases, compared to other cuckoo filter variants.
 
 
 
