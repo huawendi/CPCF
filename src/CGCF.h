@@ -97,9 +97,6 @@ namespace cuckoofilter
 
     inline size_t AltIndex(const size_t index, const uint32_t tag) const
     {
-      // NOTE(binfan): originally we use:
-      // index ^ HashUtil::BobHash((const void*) (&tag), 4)) & table_->INDEXMASK;
-      // now doing a quick-n-dirty way:
       // 0x5bd1e995 is the hash constant from MurmurHash2
       uint32_t t = tag * 0x5bd1e995;
       t &= num_buckets_ - 1;
@@ -314,4 +311,4 @@ namespace cuckoofilter
     // size_t CheckSlots() const { return table_->check_slots; }
   };
 } // namespace cuckoofilter
-#endif // CUCKOO_FILTER_CUCKOO_FILTER_H_
+#endif // CGCF_H_
