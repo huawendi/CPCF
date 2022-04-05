@@ -1,5 +1,5 @@
-#ifndef CUCKOO_FILTER_HASHUTIL_H_
-#define CUCKOO_FILTER_HASHUTIL_H_
+#ifndef CGCF_HASHUTIL_H_
+#define CGCF_HASHUTIL_H_
 
 #include <stdint.h>
 #include <stdlib.h>
@@ -90,4 +90,4 @@ class SimpleTabulation {
 };
 }
 
-#endif  // CUCKOO_FILTER_HASHUTIL_H_
+#endif  // CGCF_HASHUTIL_H_
