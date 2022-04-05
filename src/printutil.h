@@ -1,5 +1,5 @@
-#ifndef CUCKOO_FILTER_PRINTUTIL_H_
-#define CUCKOO_FILTER_PRINTUTIL_H_
+#ifndef CGCF_PRINTUTIL_H_
+#define CGCF_PRINTUTIL_H_
 
 #include <string>
 
@@ -29,4 +29,4 @@ class PrintUtil {
 
 }  // namespace cuckoofilter
 
-#endif  // CUCKOO_FILTER_PRINTUTIL_H_
+#endif  // CGCF_PRINTUTIL_H_
