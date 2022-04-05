@@ -1,5 +1,5 @@
-#ifndef CUCKOO_FILTER_DEBUG_H_
-#define CUCKOO_FILTER_DEBUG_H_
+#ifndef CGCF_H_
+#define CGCF_H_
 
 #include <stdio.h>  // for perror
 
@@ -51,4 +51,4 @@ namespace cuckoofilter {
 
 }  // namespace cuckoofilter
 
-#endif  // CUCKOO_FILTER_DEBUG_H_
+#endif  // CGCF_H_
