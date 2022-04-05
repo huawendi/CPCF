@@ -1,5 +1,5 @@
-#ifndef CUCKOO_FILTER_BITS_H_
-#define CUCKOO_FILTER_BITS_H_
+#ifndef CGCF_BITS_H_
+#define CGCF_BITS_H_
 
 #include <cmath>
 
@@ -34,4 +34,4 @@ namespace cuckoofilter
   }
 
 } // namespace cuckoofilter
-#endif // CUCKOO_FILTER_BITS_H
+#endif // CGCF_BITS_H
