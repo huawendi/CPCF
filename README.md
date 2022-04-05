@@ -56,10 +56,3 @@ To build the example (`example/test.cc`):
 ```bash
 $ make test
 ```
-
-
-
-Authors
--------
-- Wendi Hua <huawendi163@163.com>
-- Ping Xie <xieping@qhnu.edu.cn>
