@@ -3,7 +3,7 @@ CPCF: A Flexible Chunking and Proactive Insertion Cuckoo Filter
 
 Overview
 --------
-CPCF is a type of approximate set-membership query data structure based on cuckoo filter. CGCF requires smaller space and provides better operational performance in most cases, compared to other cuckoo filter variants.
+CPCF is a type of approximate set-membership query data structure based on cuckoo filter. CPCF requires smaller space and provides better operational performance in most cases, compared to other cuckoo filter variants.
 
 
 
@@ -19,7 +19,7 @@ A CPCF supports following operations:
 *  `NumChunks()`: return the number of sub-filters
 *  `NumBuckets()`: return the number of buckets in a sub-filter
 
-Here is a simple example in C++ for the basic usage of CGCF.
+Here is a simple example in C++ for the basic usage of CPCF.
 More examples can be found in `example/` directory.
 
 ```cpp
