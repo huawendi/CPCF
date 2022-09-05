@@ -1,15 +1,15 @@
-CGCF: A Flexible Chunking and Generous Random Walk Breadth-first Two-way Search Cuckoo Filter
+CPCF: A Flexible Chunking and Proactive Insertion Cuckoo Filter
 ============
 
 Overview
 --------
-CGCF is a type of approximate set-membership query data structure based on cuckoo filter. CGCF requires smaller space and provides better operational performance in most cases, compared to other cuckoo filter variants.
+CPCF is a type of approximate set-membership query data structure based on cuckoo filter. CGCF requires smaller space and provides better operational performance in most cases, compared to other cuckoo filter variants.
 
 
 
 API
 --------
-A CGCF supports following operations:
+A CPCF supports following operations:
 
 *  `Add(item)`: insert an item to the filter
 *  `Contain(item)`: return if item is already in the filter. Note that this method may return false positive results like cuckoo filters
@@ -23,11 +23,11 @@ Here is a simple example in C++ for the basic usage of CGCF.
 More examples can be found in `example/` directory.
 
 ```cpp
-// Create a CGCF where each item is of type size_t and
+// Create a CPCF where each item is of type size_t and
 // use 12 bits for each item and 4 tags for each bucket,
 // with capacity of total_items
-CGCF<size_t, 12, 4> filter(total_items);
-// Insert item 12 to this CGCF
+CPCF<size_t, 12, 4> filter(total_items);
+// Insert item 12 to this CPCF
 filter.Add(12);
 // Check if previously inserted items are in the filter
 assert(filter.Contain(12) == cuckoofilter::Ok);
@@ -35,8 +35,8 @@ assert(filter.Contain(12) == cuckoofilter::Ok);
 
 Repository structure
 --------------------
-*  `src/`: the C++ header and implementation of CGCF
-*  `example/test.cc`: an example of using CGCF
+*  `src/`: the C++ header and implementation of CPCF
+*  `example/test.cc`: an example of using CPCF
 
 
 Build
