@@ -1,5 +1,5 @@
-#ifndef CGCF_H_
-#define CGCF_H_
+#ifndef CPCF_H_
+#define CPCF_H_
 
 #include <cassert>
 
@@ -311,4 +311,4 @@ namespace cuckoofilter
     // size_t CheckSlots() const { return table_->check_slots; }
   };
 } // namespace cuckoofilter
-#endif // CGCF_H_
+#endif // CPCF_H_
