@@ -1,19 +1,19 @@
-#include "CGCF.h"
+#include "CPCF.h"
 
 #include <cassert>
 #include <iostream>
 #include <vector>
 
-using cuckoofilter::CGCF;
+using cuckoofilter::CPCF;
 using namespace std;
 
 int main(int argc, char **argv)
 {
   size_t total_items = 1000000;
 
-  // Create a CGCF where each item is of type size_t and
+  // Create a CPCF where each item is of type size_t and
   // use 12 bits for each item and 4 tags for each bucket:
-  CGCF<size_t, 12, 4> filter(total_items);
+  CPCF<size_t, 12, 4> filter(total_items);
 
   // Insert items to this CGCF
   size_t num_inserted = 0;
