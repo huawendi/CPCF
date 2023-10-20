@@ -29,7 +29,7 @@ namespace cuckoofilter
   template <typename ItemType, size_t bits_per_item, size_t tags_per_bucket,
             template <size_t, size_t> class TableType = SingleTable,
             typename HashFamily = TwoIndependentMultiplyShift>
-  class CGCF
+  class CPCF
   {
     // Storage of items
     TableType<bits_per_item, tags_per_bucket> *table_;
@@ -162,7 +162,7 @@ namespace cuckoofilter
   public:
     // size_t time[kMaxCuckooCount] = {0}, check_buckets = 0;
 
-    explicit CGCF(const size_t max_num_keys)
+    explicit CPCF(const size_t max_num_keys)
         : num_items_(0), victim_(), hasher_()
     {
       size_t keys = max_num_keys;
@@ -192,7 +192,7 @@ namespace cuckoofilter
                                                              num_chunks_);
     }
 
-    ~CGCF() { delete table_; }
+    ~CPCF() { delete table_; }
 
     // Add an item to the filter.
     Status Add(const ItemType &item)
