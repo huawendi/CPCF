@@ -15,7 +15,7 @@ int main(int argc, char **argv)
   // use 12 bits for each item and 4 tags for each bucket:
   CPCF<size_t, 12, 4> filter(total_items);
 
-  // Insert items to this CGCF
+  // Insert items to this CPCF
   size_t num_inserted = 0;
   for (size_t i = 0; i < total_items; i++, num_inserted++)
   {
